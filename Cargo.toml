@@ -2,13 +2,17 @@
 name = "to-syn-value_derive"
 version = "0.1.0"
 authors = ["Mark Thom <markjordanthom@gmail.com>"]
+description = "Defines the trait targeted by the derive macro defined in to-syn-value."
+readme = "README.md"
+repository = "https://github.com/mthom/to-syn-value_derive"
+license = "BSD-3-Clause"
 edition = "2021"
-publish = false
+publish = true
 
 [lib]
 proc-macro = true
 
 [dependencies]
-proc-macro2 = "*"
-syn = { version = "*", features = ['full', 'visit', 'extra-traits'] }
-quote = "*"
+proc-macro2 = "1.0.36"
+syn = { version = "1.0.88", features = ['full', 'visit', 'extra-traits'] }
+quote = "1.0.15"
